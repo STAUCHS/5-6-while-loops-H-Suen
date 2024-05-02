@@ -1,11 +1,15 @@
-# Example 3 - Calculating Average
-
 num_of_students = int(input("Enter the number of students: "))
 
 sum = 0
+i = 1
+count = num_of_students 
 
-# Delete this comment and place your while loop here
+while num_of_students > 0:
+    mark = float(input(f'Enter mark of #{i} student: '))
+    i += 1
+    sum += mark
+    num_of_students -= 1
 
-average = sum/num_of_students
+average = sum/count
 
 print(f"Your class average is {average}")

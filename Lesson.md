@@ -99,8 +99,9 @@ while guess != my_num:
 ```
 What's happening when we run this program?
 >
+The program continues to print "sorry wrong number"
 Why?
->
+> It is because the guess is not being updated. so the loop will run all the time because the statement is true, thus the body runs forever 
 
 <span style="color: red">
 <b>NOTE:</b> It is important to make sure the condition has a chance to change/update during the while loop. If it doesn't, it could result in an <b>infinite loop</b>
@@ -115,7 +116,20 @@ Why?
 Correct attempt:
 ```
 Pseudocode:
+import random
 
+generate random number from 1 to 100
+
+input a guess of the number
+
+while guess is not correct:
+if guess is too high
+  print "too low"
+else 
+  print "too high"
+ask user for another guess
+
+print "congration"
 ```
 ```python
 
